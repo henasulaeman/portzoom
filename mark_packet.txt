@@ -1,1 +1,1 @@
-/ip firewall mangleadd chain=forward action=mark-packet connection-mark=koneksi_zoom new-packet-mark=paket_zoom passthrough=no
+/ip firewall mangle add chain=forward action=mark-packet connection-mark=koneksi_zoom new-packet-mark=paket_zoom passthrough=no
