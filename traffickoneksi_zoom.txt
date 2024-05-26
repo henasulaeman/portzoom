@@ -1,0 +1,3 @@
+/ip firewall mangle
+add chain=prerouting protocol=tcp dst-port=3478,3479,5090,5091,8801-8810 action=mark-connection new-connection-mark=koneksi_zoom passthrough=yes;
+add chain=prerouting protocol=udp dst-port=3478,3479,5090,5091,8801-8810 action=mark-connection new-connection-mark=koneksi_zoom passthrough=yes;
